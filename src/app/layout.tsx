@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${Fluent.variable} ${Peri.variable} antialiased`}
+        className={`${Fluent.variable} ${Peri.variable} antialiased select-none`}
       >
         {children}
         <AutoPlayAudio />
