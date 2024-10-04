@@ -6,35 +6,14 @@ import { motion } from "framer-motion";
 
 import { BackgroundLines } from "@/components/ui/background-lines";
 
-import { useScroll, useTransform } from "framer-motion";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 import Navbar from "@/components/Navbar";
 import BackSection from "@/components/backsection";
 
 export default function Home() {
-  const words = [
-    {
-      text: "You",
-      className: "text-orange-500",
-    },
-    {
-      text: "are",
-    },
-    {
-      text: "invited",
-    },
-    {
-      text: "To",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-
-  ];
-
-  const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const xleft = useTransform(scrollYProgress, [0, 1], [0, -200]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+ 
+ 
   return (
     <div className=" bg-transparent">
     <Navbar />
@@ -96,7 +75,7 @@ export default function Home() {
 
 
     <div className=" bg-transparent w-full h-screen flex flex-col justify-center items-center">
-      <div className=" bg-transparent ">YOU'RE INVITED TO</div>
+      <div className=" bg-transparent ">YOU&apos;RE INVITED TO</div>
       <div className=" bg-transparent text-7xl font-Fluent">PHOENIX</div>
   
       <div className=" bg-transparent font-SummerLike text-2xl">the freshers party</div>
