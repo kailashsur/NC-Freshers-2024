@@ -7,17 +7,44 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Peristiwa';
+  src: url('/fonts/Peristiwa.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'SummerLike';
+  src: url('/fonts/Summer Like.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Partsold';
+  src: url('/fonts/Partsold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fluent';
+
+  src: url('/fonts/Fluent-SemiBold-BF66ff4fd9d7f8d.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+/* Optionally apply the custom font globally */
+
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 @layer utilities {
